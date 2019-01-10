@@ -1,0 +1,17 @@
+{
+    "name": "autoFreshQiDian",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "descritpion" : "自动刷新获取起点经验值",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "fresh",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://my.qidian.com/level"],
+            "js": ["fresh.js"]
+        }
+    ]
+}
